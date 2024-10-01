@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d18e3d0-6037-46aa-a6f2-fa9f6e422650" name="Changes" comment="Récupération du nombre de pages">
+    <list default="true" id="6d18e3d0-6037-46aa-a6f2-fa9f6e422650" name="Changes" comment="Install Selenium">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quotes_to_scrape.py" beforeDir="false" afterPath="$PROJECT_DIR$/quotes_to_scrape.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,13 +96,22 @@
       <option name="project" value="LOCAL" />
       <updated>1727792317177</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Install Selenium">
+      <option name="closed" value="true" />
+      <created>1727792828765</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1727792828765</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Install packages" />
     <MESSAGE value="Script OK" />
     <MESSAGE value="Récupération du nombre de pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Récupération du nombre de pages" />
+    <MESSAGE value="Install Selenium" />
+    <option name="LAST_COMMIT_MESSAGE" value="Install Selenium" />
   </component>
 </project>
