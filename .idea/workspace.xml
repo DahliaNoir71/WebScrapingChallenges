@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d18e3d0-6037-46aa-a6f2-fa9f6e422650" name="Changes" comment="Install Selenium">
+    <list default="true" id="6d18e3d0-6037-46aa-a6f2-fa9f6e422650" name="Changes" comment="get_nb_quotations">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quotes_to_scrape.py" beforeDir="false" afterPath="$PROJECT_DIR$/quotes_to_scrape.py" afterDir="false" />
     </list>
@@ -104,7 +104,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727792828765</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="get_nb_quotations">
+      <option name="closed" value="true" />
+      <created>1727794432397</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1727794432397</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -112,6 +120,7 @@
     <MESSAGE value="Script OK" />
     <MESSAGE value="Récupération du nombre de pages" />
     <MESSAGE value="Install Selenium" />
-    <option name="LAST_COMMIT_MESSAGE" value="Install Selenium" />
+    <MESSAGE value="get_nb_quotations" />
+    <option name="LAST_COMMIT_MESSAGE" value="get_nb_quotations" />
   </component>
 </project>

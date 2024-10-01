@@ -11,6 +11,7 @@ USERNAME = 'DahliaNoir'
 PASSWORD = 'python'
 URL_SCROLL = 'http://quotes.toscrape.com/scroll'
 SCROLL_PAUSE_TIME = 0.5
+URL_FIRST_QUOTE = 'https://quotes.toscrape.com/js/page/10/'
 
 
 def get_nb_pages():
@@ -34,11 +35,8 @@ def get_nb_quotations():
     nb_quotes = 0
     browser = webdriver.Firefox()
     browser.get(URL_SCROLL)
-
-
     # Get scroll height
     last_height = browser.execute_script("return document.body.scrollHeight")
-
     while True:
         # Scroll down to bottom
         browser.execute_script("window.scrollTo(0, document.body.scrollHeight);")
@@ -57,7 +55,14 @@ def get_nb_quotations():
 
     print('Nb quotations : ' + str(nb_quotes))
 
+def get_first_quote():
+    response = requests.get(URL_FIRST_QUOTE)
+    soup = bs(response.text, 'html.parser')
+    first_quote = soup.find('div', class_='quote').get_text()
+    print(first_quote)
 
 get_nb_pages()
 
 get_nb_quotations()
+
+get_first_quote()
