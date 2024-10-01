@@ -53,8 +53,6 @@ if response.status_code == status_ok:
                 print(
                     'Category:' + category['name']
                     + ' - nb Books: ' + str(category['nb_books'])
-                    + ' - nb Pages:' + str(category['nb_pages'])
-                    + ' - Total price:' + str(category['total_price'])
                     + ' - Average price:' + str(category['average_price'])
                 )
 

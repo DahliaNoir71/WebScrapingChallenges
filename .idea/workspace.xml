@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d18e3d0-6037-46aa-a6f2-fa9f6e422650" name="Changes" comment="Script OK" />
+    <list default="true" id="6d18e3d0-6037-46aa-a6f2-fa9f6e422650" name="Changes" comment="Script OK">
+      <change afterPath="$PROJECT_DIR$/quotes_to_scrape.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scraping_books.py" beforeDir="false" afterPath="$PROJECT_DIR$/scraping_books.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,9 +47,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.quotes_to_scrape.executor": "Run",
     "Python.scraping_books.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true"
   },
   "keyToStringList": {
