@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup as bs
 BASE_URL = 'http://quotes.toscrape.com/'
 USERNAME = 'DahliaNoir'
 PASSWORD = 'python'
-
+URL_SCROLL = 'http://quotes.toscrape.com/scroll'
 
 
 def get_nb_pages():
@@ -24,5 +24,8 @@ def get_nb_pages():
             break
 
     print('Nb pages : ' + str(nb_pages))
+
+def get_nb_quotations():
+
 
 get_nb_pages()
