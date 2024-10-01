@@ -1,0 +1,1 @@
+scraping_books.py : A partit de l'URL https://books.toscrape.com/, le script permet de lister toutes les catégories en affichant le nombre de livres qu'elle contient ainsi que le prix moyen d'un livre au sein de cette catégorie.
