@@ -57,8 +57,8 @@ def count_quotations():
 def print_first_quote():
     """Fetch and print the first quote from URL_FIRST_QUOTE."""
     soup = fetch_page(URL_FIRST_QUOTE)
-    first_quote = soup.find('div', class_='quote').get_text()
-    print(first_quote)
+    div_quotes = soup.find_all('div', class_='quote')
+    print(div_quotes)
 
 
 count_pages()
