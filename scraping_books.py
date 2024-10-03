@@ -10,14 +10,28 @@ TO_REMOVE_CATEGORY = 'Books'
 
 
 def get_response(url):
+    """
+    :param url: The URL to which the GET request is to be sent.
+    :return: The response object resulting from the GET request to the specified URL.
+    """
     return requests.get(url)
 
 
 def get_soup(response):
+    """
+    :param response: The HTTP response object containing the HTML content.
+    :return: A BeautifulSoup object initialized with the HTML content from the response.
+    """
     return BeautifulSoup(response.text, 'html.parser')
 
 
 def extract_categories():
+    """
+    Extracts categories from a books website and returns them as a list of dictionaries.
+    Each dictionary contains the 'name' of the category and the 'url_first_page' of the corresponding category page.
+
+    :return: A list of dictionaries, where each dictionary contains 'name' and 'url_first_page' keys.
+    """
     response = get_response(URL_BOOKS)
     if response.status_code != STATUS_OK:
         print("Non connecté à la page d'accueil")
@@ -41,6 +55,10 @@ def extract_categories():
 
 
 def compute_category_details(category):
+    """
+    :param category: Dictionary containing information about a book category. It should contain at least a key 'url_first_page' which points to the first page of the category's book listings.
+    :return: None. The function updates the input category dictionary in place with additional details including number of books ('nb_books'), number of pages ('nb_pages'), total price of all books ('total_price'), and average book price ('average_price').
+    """
     url_category = URL_BOOKS + category['url_first_page']
     response = get_response(url_category)
     if response.status_code != STATUS_OK:
@@ -70,6 +88,10 @@ def compute_category_details(category):
 
 
 def print_category_details(categories):
+    """
+    :param categories: List of category dictionaries. Each dictionary contains details of a specific category such as name, number of books, and average price.
+    :return: None
+    """
     for category in categories:
         compute_category_details(category)
         print(f"Category: {category['name']} - nb Books: {category['nb_books']} - "
@@ -77,6 +99,11 @@ def print_category_details(categories):
 
 
 def main():
+    """
+    Extracts categories and prints their details.
+
+    :return: None
+    """
     categories = extract_categories()
     if categories:
         print_category_details(categories)
